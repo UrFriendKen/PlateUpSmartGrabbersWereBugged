@@ -46,10 +46,6 @@
 			<HintPath>$(GamePath)\Mods\KitchenLib\content\KitchenLib-Workshop.dll</HintPath>
 		</Reference>
 	</ItemGroup>
-  
-	<ItemGroup>
-	  <Folder Include="Patches\" />
-	</ItemGroup>
 
 	<Target Name="BundleWorkshop" AfterTargets="Build" Condition="$(EnableModDeployLocal) == 'true'">
 		<Copy SourceFiles="$(TargetDir)$(MSBuildProjectName)-Workshop.dll" DestinationFolder="$(WorkshopDir)" />
